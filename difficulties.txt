@@ -1,0 +1,5 @@
+ SyntaxError: Unexpected identifier in \path\views\landing.ejs while compiling ejs
+ Inspite of using <% use <%- 
+ Certain depreciation warning for mongodb
+ mergeparams:true
+ auth using the password js file

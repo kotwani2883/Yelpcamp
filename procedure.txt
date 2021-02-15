@@ -1,0 +1,107 @@
+#YelpCamp
+#Adding landing page
+#Add campground Page and list all the campgrounds
+
+Each campground has :
+Name 
+Image
+description
+
+campground is of the form
+[
+    {
+        name:"", Image:" " ,description:""
+    }
+]
+
+#layout and basic styling
+*Create header and footer partials
+*Add in bootstrap
+
+#Creating new campground
+*SetUp new campground OST route
+*Add in body-parser
+*Setup route to show form
+*Add basic styling to the form
+
+#style the campgrounds page
+* Add a better header/title
+* Make campground display in a grid
+
+#Style the navbar and form
+* Add a navbar to all templates
+* Style the new campground form
+
+#Add Mongoose
+* Install and configure Mongoose
+* Setup campground model
+* Use campground model inside our routes
+
+#Show Page
+* Review the Restful routes we've seen so far
+* Add description to our campground model
+* Show db.collection.drop()
+* Add a show route/templates
+
+RESTFUL route
+
+name   url           verb    description
+================================
+INDEX  /campgrounds    GET    display a list of all campground
+NEW  /campgrounds/new  GET    display form to make new campground
+CREATE /campgrounds     POST   Add a new campground to db
+SHOW   /campgrounds/:id  GET    display info about one campground
+
+#Refactor Mongoose Code
+* Create a models directory
+* Use module.exports
+* Require everything correctly
+
+#Add Seeds File
+* Add a seeds.js File
+* Run the seeds file every time the server starts
+ 
+
+#Add the Comment model!
+* Make  our errors go away!
+* display comments on campground show page
+
+#Comment New /Create
+* Nested  Routes
+*Add the comment new and Create route
+* Addthe new Comment form
+
+NEW /campgrounds/:id/comments/New GET
+CREATE /campground/:id/comments  POST
+
+# Style show page
+* Add sidebar to show page
+* Display comments nicely
+
+#Add user model
+* Install all packages needed for auth
+* Define User model
+
+# Register user Model
+* Configure Passport
+* Add register routes
+* Add register template 
+
+#Login
+* Add Login route
+* Add lOgin template
+
+## Logout/navbar
+* Add logout route
+* Prevent user from adding a comment if not signed  in
+* Add link to the navbar
+
+# Show hide links
+* Show /hide auth link correctly
+
+## Refactor the routes
+* Use Express router to reorganize all routes
+
+## Users +comments
+* Associate users and comments
+* Save authors name to a comment automatically
